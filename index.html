@@ -17,7 +17,7 @@
         <p class="text-secondary text-lowercase">layout a griglia con diversi breakpoint (sm,md,lg) </p>
     </header>
 
-    <div class="container text-light">
+    <div class="container d-flex flex-column gap-4 text-light">
         <div class="row row-cols-1 row-cols-md-2 ">
             <div class="col  p-3 text-dark  bg-light col-lg-4">
                 <h2>Colonna 1</h2>
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div class="row my-3  row-cols-2 row-cols-md-3">
+        <div class="row  row-cols-2 row-cols-md-3">
             <div class="col p-3 bg-primary">
                 <h2>Colonna 1 </h2>
                 <p> Metà larghezza su dispositivi
@@ -82,8 +82,8 @@
             </div>
         </div>
 
-        <!-- tutti i vari -sm- partendo da mobile first equivalgono alla versione senza alcuna mediaquery aggiunta -->
-
+        <!-- tutti i vari -sm- partendo da mobile first equivalgono alla versione senza alcuna mediaquery aggiunta
+         tentata variante con d-flex al .container per vedere il funzionamento del gap in column direction -->
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
